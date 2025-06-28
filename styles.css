@@ -1,0 +1,1199 @@
+/* Login and Signup Page Styles */
+.login-container {
+  min-height: 100vh;
+  background-color: #fce4ec; /* Tailwind bg-pink-50 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 24rem; /* Tailwind w-96 */
+}
+
+.heading {
+  font-size: 1.5rem; /* Tailwind text-2xl */
+  font-weight: 700; /* Tailwind font-bold */
+  color: #ec4899; /* Tailwind text-pink-600 */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.error {
+  color: #f87171; /* Tailwind text-red-500 */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  color: #374151; /* Tailwind text-gray-700 */
+  margin-bottom: 0.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb; /* Tailwind border */
+  border-radius: 0.375rem; /* Tailwind rounded-md */
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #ec4899; /* Tailwind focus:ring-pink-300 */
+  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.3); /* Tailwind focus:ring-2 focus:ring-pink-300 */
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #ec4899; /* Tailwind bg-pink-600 */
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #db2777; /* Tailwind hover:bg-pink-700 */
+}
+
+.footer-text {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.link-text {
+  color: #ec4899; /* Tailwind text-pink-600 */
+  text-decoration: underline;
+}
+
+.link-text:hover {
+  color: #db2777; /* Tailwind hover:underline */
+}
+
+/* General container for the settings page */
+.settings-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Title for sections */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Account Settings and Health Info Card */
+.account-settings, .health-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Button styling */
+.button-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db; /* Gray border */
+  border-radius: 8px;
+  background-color: white;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.button-style:hover {
+  background-color: #f3f4f6; /* Light hover background */
+}
+
+/* Logout button specific styles */
+.logout-button {
+  color: #f44336; /* Red color for logout */
+}
+
+.logout-button:hover {
+  color: #d32f2f; /* Darker red on hover */
+}
+
+/* Icon and text within buttons */
+.button-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Chevron icon on the right */
+.icon-right {
+  height: 16px;
+  width: 16px;
+}
+
+/* Category button styling */
+.category-button {
+  padding: 16px;
+  height: auto;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+/* Category content */
+.category-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+/* Icon styles within the category content */
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.red-icon { color: #f44336; }
+.yellow-icon { color: #ffeb3b; }
+.pink-icon { color: #e91e63; }
+.purple-icon { color: #9c27b0; }
+
+/* Text content for category */
+.text-content {
+  text-align: left;
+}
+
+/* Category title and description */
+.category-title {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.category-description {
+  font-size: 0.875rem;
+  color: #6b7280; /* Gray */
+}
+/* Overall Container */
+.track-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f1f5;
+  min-height: 100vh;
+}
+
+/* Card Styling */
+.track-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.track-card.active {
+  background-color: #fcd7e0; /* Light pink background when active */
+  border: 2px solid #f98da1; /* Slightly darker pink border when active */
+}
+
+.track-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.track-card:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Header */
+.track-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 1.6em;
+  color: #d53b7a; /* Pink color for the title */
+  font-weight: 600;
+}
+
+.calendar-icon {
+  color: #d53b7a; /* Pink calendar icon */
+  font-size: 1.5em;
+}
+
+/* Slider Section */
+.flow-rate-section {
+  margin-top: 20px;
+}
+
+.section-subtitle {
+  font-size: 1.2em;
+  color: #d53b7a; /* Pink subtitle */
+  font-weight: 500;
+}
+
+.slider {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  color: #d53b7a;
+  font-size: 0.9em;
+}
+
+/* Symptoms and Mood Buttons */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.symptom-button,
+.mood-button {
+  background-color: #ffffff;
+  border: 2px solid #d53b7a;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #d53b7a;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.symptom-button.active,
+.mood-button.active {
+  background-color: #fcd7e0; /* Light pink for active state */
+  border-color: #f98da1;
+  color: #d53b7a;
+}
+
+.symptom-button:hover,
+.mood-button:hover {
+  background-color: #fcd7e0; /* Light pink when hovered */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.symptom-button:active,
+.mood-button:active {
+  background-color: #f98da1; /* Darker pink when clicked */
+  border-color: #f98da1;
+  color: #fff;
+}
+
+/* Save Button */
+.save-button {
+  background-color: #d53b7a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #f98da1; /* Slightly lighter pink on hover */
+}
+
+.save-button:active {
+  background-color: #f56c8e; /* Darker pink when clicked */
+}
+/* General container for the TrackPage */
+.track-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Track Card Styles */
+.track-card {
+  margin-bottom: 24px;
+}
+
+/* Header styles */
+.track-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Calendar icon style */
+.calendar-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Track Content Section */
+.track-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Flow Rate Section */
+.flow-rate-section {
+  margin-bottom: 24px;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.slider {
+  width: 100%;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Button grid styling for symptoms and mood */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.symptom-button, .mood-button {
+  width: 100%;
+}
+
+/* Save Button */
+.save-button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #2563eb;
+}
+
+/* Calendar Container */
+.calendar-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Card Styles */
+.card {
+  margin-bottom: 24px;
+}
+
+/* Calendar Header */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.calendar-arrow {
+  width: 16px;
+  height: 16px;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-top: 16px;
+}
+
+/* Day Header */
+.calendar-day-header {
+  text-align: center;
+  font-weight: 600;
+  padding: 8px;
+}
+
+/* Empty Day */
+.empty-day {
+  padding: 8px;
+}
+
+/* Calendar Day */
+.calendar-day {
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+
+.period-day {
+  background-color: #fef2f2;
+  color: #e11d48;
+}
+
+.selected-day {
+  border: 2px solid #2563eb;
+}
+
+.hover-day:hover {
+  background-color: #f1f5f9;
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.legend-period {
+  width: 12px;
+  height: 12px;
+  background-color: #fef2f2;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.legend-selected {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #2563eb;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.legend-text {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+/* Container for the analysis page */
+.analysis-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Grid container for stats */
+.stats-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* Card Content Style */
+.card-content {
+  padding: 24px;
+}
+
+/* Card Title and Value Style */
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+/* Chart Title Style */
+.chart-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Chart Container for responsive sizing */
+.chart-container {
+  height: 300px;
+}
+
+/* General styles for cards in grid */
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Ensuring charts fit in container */
+.recharts-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Dashboard Page Container */
+.dashboard-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+/* Logo and Dashboard Text */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.logo-text {
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Logout Button */
+.logout-container {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #4b5563;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.logout-button:hover {
+  color: #1f2937;
+}
+
+.logout-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+/* Main Content Area */
+.main-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Dashboard Box */
+.dashboard-box {
+  border: 4px dashed #d1d5db;
+  border-radius: 8px;
+  height: 24rem;
+  padding: 16px;
+}
+
+.welcome-text {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 16px;
+}
+
+.dashboard-container {
+  background-color: #ffd8d8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Logo Section */
+.logo-section {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.logo {
+  font-family: cursive;
+  font-size: 42px;
+  color: #8b4513;
+  margin: 0;
+}
+
+.flower-icon {
+  position: absolute;
+  right: -20px;
+  top: 0;
+  font-size: 24px;
+  color: #8b4513;
+}
+
+/* Days Counter */
+.days-counter {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #8b4513;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.circle span {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.days-text {
+  color: #8b4513;
+  font-size: 18px;
+  font-family: cursive;
+}
+
+/* Navigation Icons */
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: #8b4513;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.icon-box svg {
+  color: white;
+}
+
+.nav-item span {
+  color: #8b4513;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .nav-icons {
+    gap: 15px;
+  }
+
+  .icon-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-item span {
+    font-size: 12px;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Add this to your index.css or App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* styles.css */
+:root {
+  --primary-pink: #FF69B4;
+  --primary-pink-dark: #FF1493;
+  --primary-pink-light: #FFC0CB;
+  --background-pink: #FFF0F5;
+  --white: #FFFFFF;
+  --gray-light: #F0F0F0;
+  --gray: #808080;
+  --black: #333333;
+}
+
+/* Layout */
+.app-container {
+  min-height: 100vh;
+  background-color: var(--background-pink);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-pink);
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-pink-light);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--primary-pink-dark);
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: var(--primary-pink);
+  color: var(--white);
+}
+body {
+  background: linear-gradient(135deg, #ffe4e1, #ffc0cb);
+  font-family: 'Poppins', sans-serif; /* Modern font for a clean look */
+}
+.counter {
+  width: 120px;
+  height: 120px;
+  background-color: #ff69b4;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 1.5rem;
+}
+
+.period-circle {
+  width: 150px;
+  height: 150px;
+  background-color: var(--primary-pink-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.period-days {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-pink-dark);
+}
+
+/* Footer Navigation */
+.footer-nav {
+  background-color: var(--white);
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-pink);
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: var(--primary-pink-dark);
+}
+
+.nav-text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Auth Forms */
+.auth-container {
+  min-height: 100vh;
+  background-color: var(--background-pink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.auth-box {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-title {
+  font-size: 2rem;
+  color: var(--primary-pink);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--black);
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--gray-light);
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.form-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary-pink);
+  color: var(--white);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: var(--primary-pink-dark);
+}
+
+.auth-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--primary-pink);
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  color: var(--primary-pink-dark);
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.slider-value {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* General Styles */
+.card {
+  background-color: #f4f4f9; /* Light gray background for all cards */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Styles when the card is toggled or active */
+.card.active {
+ background-color: #bd18af;
+; /* Light blue color for active state */
+  border: 2px solid #4a90e2; /* Blue border for active card */
+}
+
+/* Button Styles */
+.button {
+  border: 2px solid #cccccc;
+  background-color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button active state */
+.button.active {
+  background-color: ;
+  color: white;
+  border: none;
+}
+
+/* Toggle active button color */
+.button.outline {
+  background-color: #fff;
+  color: #4a90e2;
+  border: 2px solid #4a90e2;
+}
+
+.button.outline.active {
+  background-color: #4a90e2;
+  color: white;
+}
+
+/* Highlighted period days (dark pink background) */
+.period-day {
+    background-color: #e41c51; /* Dark pink */
+    color: white;
+    border-radius: 50%;
+}
+
+/* Selected day styling */
+.selected-day {
+    background-color: #e41c51; /* Dark pink */
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* Hover effect for calendar days */
+.hover-day:hover {
+    background-color: #f0f0f0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* General styling for the card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Button styling */
+button {
+    background-color: #ffe4e1; /* Light pink */
+    color: #333; /* Dark text for contrast */
+    border: 2px solid #ffccd5; /* Border matching the pink theme */
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ffccd5; /* Slightly darker pink on hover */
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #ff99aa; /* Darker pink when clicked */
+    color: #fff; /* White text for better visibility */
+}
+
+/* Slider styling */
+input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling */
+    width: 100%;
+    height: 6px;
+    background: #ffe4e1; /* Light pink */
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #ff99aa; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: #ffccd5; /* Slightly lighter pink */
+    transform: scale(1.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #ff99aa;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background-color: #ffccd5;
+    transform: scale(1.2);
+}
+
+
